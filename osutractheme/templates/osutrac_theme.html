@@ -7,10 +7,8 @@
     py:strip="">
 
 <head py:match="head" py:attrs="select('@*')">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="osu_navbar/css/osu_navbar-resp-white.css">
-
     ${select('*')}
+    <link rel="stylesheet" href="${href.chrome('osu_navbar/css/osu_navbar-resp-white.css')}" />
 </head>
 
 <body py:match="body" py:attrs="select('@*')">
