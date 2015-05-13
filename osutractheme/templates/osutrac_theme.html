@@ -39,11 +39,6 @@
     </div><!-- /osu_navbar -->
 
     <div id="PageHeader" class="noprint">
-    <ul>
-        <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
-        ${item.label}
-        </li>
-    </ul>
     <a id="logo" href="${chrome.logo.link}">${chrome.logo.alt}</a>
     </div>
 
@@ -66,10 +61,16 @@
         </div>
         </py:if>
         ${select('*')}
+
+        <ul id="MetaNav">
+            <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
+            ${item.label}
+            </li>
+        </ul>
     </div>
 
     <div id="Footer" class="noprint">
-    © 2012 Trac adaptation of Redmine theme A1 from Kirill Bezrukov <a href='http://redminecrm.com/projects/a1theme/wiki'>redminecrm.com</a><br/>
+    &copy; 2015 The Ohio State University - <a href="https://research.osu.edu">Office of Research</a><br/>
     </div>
 
 </body>

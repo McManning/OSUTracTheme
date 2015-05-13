@@ -1,6 +1,6 @@
 /* CSS reset - comment out if already using a reset  */
 html, body, div, span, p, a, img, ul, li {margin:0;padding:0;border:0;}
-#osu_navbar .container {width:960px; margin: 0 auto;}
+#osu_navbar .container {width: 100%; margin: 0 auto;}
 
 
 /* OSU Navbar styles */
@@ -14,7 +14,7 @@ a#skip:active:hover, a#skip:focus:hover {background:#b00; background:rgba(187,0,
 
 
 /*Update background color, but do not remove red bg*/
-#osu_navbar {clear:both; margin:0; padding:0; background: #333 url(../images/white/bg-navbar_red.png) center bottom repeat-x; overflow:hidden;} 
+#osu_navbar {clear:both; margin:0; padding:0; background: #000 url(../images/white/bg-navbar_red.png) center bottom repeat-x; overflow:hidden;} 
 #osu_navbar * {font-family:'proximanova','Helvetica Neue', Helvetica, Arial, sans-serif; font-size:13px;line-height:1.5; font-weight:400;}
 /* University info */
 #osu_navbar p {margin:0; padding:0;}

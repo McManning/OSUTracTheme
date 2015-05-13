@@ -161,30 +161,6 @@ h4, .wikipage h3 {
     height: 1.8em;
 }
 
-/* Temp OSU Navbar implementation until I add the actual navbar  */
-#PageHeader ul {
-  clear:both;
-  margin:0;
-  padding:0;
-  background: #000 url(https://brand.osu.edu/assets/site/osu_navbar/images/white/bg-navbar_red.png) center bottom repeat-x;
-  overflow:hidden;
-  padding: 1em 0;
-}
-
-#PageHeader::before {
-  content: ' ';
-  position: absolute;
-  top: 13px;
-  left: 20px;
-  height:16px;
-  width:80px;
-  display:block;
-  text-indent:-9999px;
-  background:url(https://brand.osu.edu/assets/site/osu_navbar/images/white/osu_name.png) 0 0 no-repeat;
-}
-
-/* End temp OSU Navbar */
-
 #PageHeader a, #PageHeader a:hover {
     color: #FFFFFF;
     font-weight: bold;
