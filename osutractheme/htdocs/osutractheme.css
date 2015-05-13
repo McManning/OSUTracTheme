@@ -1,0 +1,1099 @@
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+
+/* Documentation extras */
+
+.docbox {
+  padding: 12px 12px 12px 64px;
+  margin: 18px 64px 18px 64px;
+  border-width: 1px 1px 1px 18px;
+  border-style: solid;
+}
+
+.fixme {
+  border-color: #2FF;
+  background: #DFF;
+}
+
+.warning {
+  border-color: #f8ba20;
+  background: #f8e9c7;
+}
+
+.tip {
+  border-color: #699536;
+  background: #dfec93;
+}
+
+.docbox .icon {
+  margin-left: -12px;
+}
+
+/***************************************************************************/
+/********************* MAIN CONTENT **********************/
+body {
+    background: none repeat scroll 0 0 #F0F0F0;
+    font-family: 'proximanova','Helvetica Neue', Helvetica, Arial,sans-serif;
+    font-size: 14px;
+    color: #484848;
+    margin: 0;
+    padding: 0;
+    min-width:800px;
+
+    -webkit-font-smoothing: antialiased;
+       -moz-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'proximanova','Helvetica Neue', Helvetica, Arial,sans-serif;
+}
+
+a, a:visited, :link, :link:visited{
+    background-color:none;
+    text-decoration:none;
+    border-bottom:none;
+}
+
+a, a:link, a:visited {
+    color: #005782;
+}
+
+a:hover, *:visited:hover,:link:hover, *:link:hover {
+    background-color:transparent;
+    text-decoration:underline;
+    color: #005782;
+}
+
+h1, h2 {
+    /*margin:0 0 10px;*/
+    /*padding:2px 10px 1px 0;*/
+    color: #222222;
+    font-size:26px;
+    margin-left:0px;
+}
+
+h2 {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 6px;
+}
+
+h2,h3 {
+    font-size: 16px;
+    background:none;
+}
+
+#content.admin h1 {
+    display:block;
+    float:none;
+    margin-top:6px;
+}
+
+/****************** WIKI *********************/
+.wikipage h1, .wikipage h2,.wikipage h3,.milestone h2,.milestone h3 {
+    /*margin:0 0 10px;*/
+    /*padding:2px 10px 1px 0;*/
+    color: #222222;
+    font-size:26px;
+    margin-left:0px;
+}
+
+.wikipage h2, .milestone h2 {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 6px;
+}
+
+.wikipage h2,.wikipage h3,.milestone h2,.milestone h3 {
+    font-size: 1.5em;
+    background:none;
+    box-shadow: none;
+}
+
+.wikipage {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.wikipage p {
+    text-align:justify;
+}
+
+a.ext-link .icon {
+    background-image: url("external.png");
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+}
+
+h4, .wikipage h3 {
+    border-bottom: 1px dotted #BBBBBB;
+    color: #444444;
+    font-size: 1.25em;
+    margin-bottom: 5px;
+    padding: 2px 10px 1px 0;
+    border:none;
+}
+
+/****************** FIRST MENU LINE AT TOP OF PAGE ******************/
+#PageHeader ul {
+    /*font-size: 8pt;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#PageHeader li {
+    float: right;
+    display: inline;
+    padding: 0 6px 0 6px;
+    white-space: nowrap;
+}
+
+#PageHeader ul {
+    background: none repeat scroll 0 0 #000000;
+    padding: 7px 10px 2px 20px;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    height: 1.8em;
+}
+
+/* Temp OSU Navbar implementation until I add the actual navbar  */
+#PageHeader ul {
+  clear:both;
+  margin:0;
+  padding:0;
+  background: #000 url(https://brand.osu.edu/assets/site/osu_navbar/images/white/bg-navbar_red.png) center bottom repeat-x;
+  overflow:hidden;
+  padding: 1em 0;
+}
+
+#PageHeader::before {
+  content: ' ';
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  height:16px;
+  width:80px;
+  display:block;
+  text-indent:-9999px;
+  background:url(https://brand.osu.edu/assets/site/osu_navbar/images/white/osu_name.png) 0 0 no-repeat;
+}
+
+/* End temp OSU Navbar */
+
+#PageHeader a, #PageHeader a:hover {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 8px;
+    border-bottom: none;
+}
+
+#PageHeader a:visited {
+    text-decoration: none;
+}
+
+#PageHeader a#logo {
+    display:block;
+    width: 100%;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color: #333;
+    height: auto;
+    color: #E0E0E0;
+    font-size: 22px;
+
+    /* Temp injection of help desk header until I make a better one... */
+    font-size: 0;
+    background: url('http://registrar.osu.edu/es-template-resources/css/images/bg-buckeyepattern.jpg') 0 0 repeat-x #333;
+    height: 100px;
+
+    /* padding: 5px 65px; */    
+}
+
+#PageHeader a#logo::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  /*background: url('https://orhelp.osu.edu/support/__swift/files/file_6tbl4ko5973k8kr.png') 0 10px no-repeat;*/
+  background: url('http://dev.sybolt.com/trac/orissandbox/chrome/theme/oris_trac_header.png') 15px 10px no-repeat;
+}
+
+/********************** LINE WITH LOGO *******************/
+#MenuBar {
+    bottom: 0;
+    left: 6px;
+    /*margin-right: -500px;*/
+    /*position: absolute;*/
+}
+
+#MenuBar {
+    background-color: #555;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    color: #F8F8F8;
+}
+
+/********************** MAIN MENU BAR ****************************/
+#MenuBar #MenuBarHighlight {
+    margin-top: -14px;
+    padding: 0;
+}
+
+#MenuBar #MenuBarHighlight ul {
+    /* margin-top: 7px; */
+    padding-left: 15px;
+}
+
+#MenuBar #MenuBarHighlight li {
+    float: left;
+    list-style-type: none;
+    margin: 0 2px 0 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#MenuBar #MenuBarHighlight li a {
+    /* TODO: Use thinner fonts! */
+    border-radius: 6px 6px 6px 6px;
+    color: #fff7df;
+    display: block;
+    float: left;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-shadow: none;
+    margin:0px;
+    border:none;
+}
+
+#MenuBar #MenuBarHighlight li a:hover {
+    text-decoration:none;
+    color: #FFF;
+}
+
+#MenuBar #MenuBarHighlight li.active a {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #333;
+
+    color: #F0F0F0;
+    padding: 5px 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-shadow: none;
+}
+
+#MenuBar #MenuBarHighlight li a.selected:hover {
+    color: #F0F0F0;
+}
+
+#MenuBar {
+    margin-bottom: 15px;
+}
+
+/******************* SUB MENU (history, index...) **********************/
+#Container, {
+    background-color: #FFFFFF;
+    border-right: 1px solid #DDDDDD;
+    margin: 0;
+    padding: 6px 10px 10px;
+    width: 75%;
+    z-index: 10;
+}
+
+#Container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCC;
+    border-radius: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+#Container {
+    width: auto;
+    margin: 0 15px;
+    padding: 0 15px;
+}
+
+/* Centered padded variation. Meh... Need to focus on usability
+#Container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+*/
+
+.trac-modifiedby {
+    text-align:left;
+    float: left;
+    padding:2px;
+    padding-top:0px;
+}
+
+/*********************** CONTENT *******************/
+#content {
+    border-radius: 0px;
+    border-top:none;
+    border-bottom:none;
+    box-shadow:none;
+}
+
+#SubMenuBar {
+    border-radius: 8px 8px 0px 0px;
+    border-bottom:none;
+}
+
+#altlinks {
+    border-radius: 0;
+    border-top: none;
+    margin: 1em 0;
+}
+
+#content.roadmap > h1,#content.search > h1, #content.admin > h1, #content.prefs > h1,#content.error > h1 {
+    background: none;
+    border: none;
+    color: #333;
+    margin: 0px -15px -15px;
+    margin-bottom:20px;
+    padding: 12px 12px;
+    text-shadow: none;
+}
+
+#content.ticket {
+    width:auto;
+    margin-top: 12px;
+}
+
+/*********************tables **********************/
+table.listing, table.reports{
+    border: 1px solid #E4E4E4;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+table.listing th {
+    background-color: #EEEEEE;
+    padding: 4px;
+    white-space: nowrap;
+}
+
+table.listing thead th {
+    border-color: #D7D7D7;
+    border-style: solid;
+    border-width: 1px;
+    font-size:12px;
+}
+
+table.listing tbody td {
+    border: 1px solid #D7D7D7;
+}
+
+table.listing thead th {
+    padding: 7px;
+}
+
+table.listing tbody td, table.listing tbody th {
+    padding: 7px;
+}
+
+/********************* pref page *******************/
+#content.prefs #tabcontent
+{
+    clear:none;
+}
+
+#content.prefs #tabs li,#content.prefs #tabs li.active{
+    background:none;
+    border:none;
+}
+
+#content.prefs #tabs li,#content.prefs #tabs #tab_advanced{
+    float:none;
+}
+
+/********************* Sub menu bar ***************/
+#SubMenuBar {
+/*  float:left; */
+    margin-top:15px;
+}
+
+#SubMenuBar ul {
+    margin-top: 7px;
+    padding:2px;
+/*     padding-left: 15px; */
+}
+
+#SubMenuBar li {
+    list-style-type: none;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style-type: none;
+    white-space: nowrap;
+    display:inline;
+    /*  float:left; */
+    color: #AAAAAA;
+}
+
+#SubMenuBar li a {
+    color:#505050;
+    font-size: 0.9em;
+    line-height:1.4em;
+    white-space: nowrap;
+}
+
+#SubMenuBar li a:visited {
+    text-decoration:none;
+}
+
+#SubMenuBar li:hover {
+    color:#333333;
+    text-decoration:underline;
+    background:none;
+}
+
+#SubMenuBar li {
+    border: 1px solid silver;
+    border-radius: 8px 8px 8px 8px;
+    padding:4px;
+    background-color:#F0F0F0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    color: #AAAAAA;
+    font-size: 0.9em;
+}
+
+#SubMenuBar li:hover {
+    background-color:#E0E0E0;
+}
+
+/*************** BUTTON BAR ******************/
+#delete, #rename, #save{
+    margin:0px;
+}
+
+.buttons input[type="button"], .buttons input[type="submit"] {
+    border:none;
+    background:none;
+    margin:0px;
+    padding:0px;
+    color: #888888;
+    font-size: 0.9em;
+    line-height:1.4em;
+    white-space: nowrap;
+    cursor:pointer;
+}
+
+.buttons input[type="button"], .buttons input[type="submit"] {
+    border: 1px solid silver;
+    border-radius: 8px 8px 8px 8px;
+    padding:4px;
+    background-color:#E0E0E0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    color:#505050;
+}
+
+.buttons input[type="button"]:hover, .buttons input[type="submit"]:hover {
+    background-color:#D0D0D0;
+}
+
+.buttons #modifypage div input[type="submit"] {
+    background-image: url("edit.png");
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.buttons #attachfile div input[type="submit"]{
+    background-image: url("attachment.png");
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.buttons #rename div input[type="submit"]{
+    background-image: url("move.png");
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.buttons #delete input[type="submit"]{
+    background-image: url("delete.png");
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.buttons input:hover {
+    color:#333333;
+    text-decoration:underline;
+    background:none;
+}
+
+/***************** formats ****************/
+
+#altlinks h3 {
+    display:td;
+}
+
+#altlinks ul {
+    display:td;
+}
+
+#altlinks ul li{
+/*  float: right; */
+}
+
+#altlinks a, a:link, #altlinks a:visited {
+    color: #005782;
+}
+
+#altlinks li *:link, #altlinks li *:visited {
+    color: #005782;
+}
+
+#altlinks a:hover, #altlinks *:visited:hover,#altlinks :link:hover {
+    background:none;
+    text-decoration:underline;
+    color: #005782;
+}
+
+/****************** FOOTER ****************/
+#Footer {
+    /*border-top: 1px solid #bbb;*/
+    color: #AAAAAA;
+    font-size: 8t;
+    /*padding: 12px;*/
+    margin:15px;
+    text-align:center;
+    /*margin-top: 32px;
+    margin-bottom: 0px;
+    background: url("footer-highlight.png") repeat-x;*/
+    /*background-color: #ddd;*/
+}
+
+/**************** side bar *********************/
+#prefs, .wiki-toc{
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 22%;
+    z-index: 9;
+    background: none repeat scroll 0 0 #f5f5ee;
+    border: 1px solid #D9D9D9;
+    border-radius: 0;
+    padding: 15px 0 20px 15px !important;
+    width: 260px !important;
+    margin-bottom:15px;
+}
+
+.wiki-toc {
+    margin-left:2em;
+    width: 12em !important;
+    font-size:1em;
+}
+
+/******************* tabs ***********************/
+#tabs {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 12em;
+    z-index: 9;
+    background: none repeat scroll 0 0 #f5f5ee;
+    border: 1px solid #CCC;
+    border-radius: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px 10px 20px 15px !important;
+    margin-right:15px;
+}
+
+#tabs li li.active {
+    background: none;
+    border: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 0 9px;
+}
+
+#tabs li li.active::before {
+    content: '\25b6';
+    float: left;
+    padding-right: 0.25em;
+    color: #005782;
+}
+
+#tabs ul li{
+    font-size: 14px;
+/*     margin-top: 14px; */
+    color: #222222;
+    font-family: "Lucida Grande",verdana,arial,helvetica,sans-serif;
+}
+
+#tabs ul li ul li {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+#tabcontent {
+    min-height: 35em;
+}
+
+#tabcontent {
+    margin-left:16em;
+    padding-left:0px;
+}
+
+/**************** milestone *********************/
+.milestone .info h2,.milestone .info h3 {
+    /*margin:0 0 10px;*/
+    /*padding:2px 10px 1px 0;*/
+    color: #222222;
+    font-size:26px;
+    margin-left:0px;
+}
+
+.milestone .info h2 {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 6px;
+}
+
+.milestone .info h2,.milestone .info h3 {
+    font-size: 1.25em;
+    background:none;
+}
+
+.milestone .info h2 *:link, .milestone .info h2 *:visited {
+    color: #222222;
+}
+
+.milestone .info h2 em {
+    color: #005782;
+    font-style: normal;
+}
+
+.milestones { 
+  margin: 2.5em 0 0; 
+  padding: 0;
+}
+
+/**************** forms ************************/
+
+input, textarea {
+ border-radius: 4px;
+}
+
+fieldset {
+ border: 1px solid #d7d7d7;
+ border-radius: 0;
+ margin: 0;
+ background: #EEE;
+ box-shadow: none;
+ padding: 1em;
+}
+
+legend {
+ color: #999;
+ margin-left: 0;
+ padding: 0;
+ font-size: 1em;
+ font-weight: 400;
+ text-transform: uppercase;
+}
+
+fieldset > legend.foldable :link, fieldset > legend.foldable :visited {
+ color: #666;
+ font-size: 1.2em;
+ text-shadow: none;
+}
+
+.foldable :link, .foldable :visited {
+ border: none;
+ border-radius: 0;
+ box-shadow: none;
+ color: #333;
+ text-shadow: none;
+ padding: .3em .5em .3em 20px;
+}
+
+/* Via OSU brand styles */
+@import url("//www.osu.edu/assets/fonts/webfonts.css");
+
+
+body, h1, h2, h3, h4, h5, h6, td, .button {font-family: 'proximanova','Helvetica Neue', Helvetica, Arial,sans-serif;}
+h1, h2, h3, h4, h5, h6, strong, .button {font-weight:600;}
+h4, h5, h6 {clear:both;}
+h2 {font-weight:400;}
+h3 {font-weight:300;}
+h4 {font-weight:400;}
+h5 {font-weight:600;}
+
+body, th, tr {
+    font-size: 14px;
+}
+
+/* Page preferences form */
+#prefs, form#prefs {
+    box-shadow: none;
+    font-size: 1em;
+    padding-bottom: 0 !important; /* Because redmine does it for wiki-toc */
+    margin-top: 12px;
+}
+
+#prefs input, #prefs select {
+    font-size: 1em; 
+    vertical-align: middle;
+}
+
+#prefs fieldset legend {
+    font-size: 1em;
+}
+
+h2 {
+    box-shadow: none;
+}
+
+#SubMenuBar li a {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+/* Avoid to inherit white-space of its parent element for IE 11, #11376 */
+input[type=button], input[type=submit], input[type=reset],
+.buttons input[type=button], .buttons input[type=submit], .buttons input[type=reset],
+#SubMenuBar li  {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid #cccccc;
+  white-space: nowrap;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  line-height: 1em;
+  height: inherit; 
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #444444;
+  background-color: #fff;
+  text-shadow: none;
+
+  color: #ffffff;
+  background-color: #005782;
+  border-color: #005782;
+  box-shadow: none;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, #SubMenuBar li:hover {
+    background-color: #005782;
+    color: #ffffff;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.buttons input[type=button], .buttons input[type=submit], .buttons input[type=reset] {
+    color: #ffffff;
+    background-color: #019875;
+    border-color: #019875;
+    margin-right: em;
+}
+
+.buttons input[type=button]:hover, .buttons input[type=submit]:hover, .buttons input[type=reset]:hover {
+    color: #ffffff;
+    background-color: #019875;
+    border-color: #019875;
+}
+
+.inlinebuttons input {
+    font-size: 0.8em;
+}
+
+.inlinebuttons input[type=button]:hover,
+.inlinebuttons input[type=submit]:hover {
+ background: #666;
+ color: #ffffff;
+ text-shadow: none;
+ box-shadow: none;
+ text-decoration: underline;
+}
+
+#SubMenuBar li a {
+    color: #fff;
+}
+
+/* Ticket box */
+#ticket {
+ background: #eee;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ margin-top: .2em;
+ padding: .5em 1em;
+ position: relative;
+}
+
+#ticket > h2 .trac-status {
+ vertical-align: middle;
+ text-transform: uppercase;
+}
+#ticket > h2 .trac-type {
+ color: #999;
+ vertical-align: middle;
+ text-transform: uppercase;
+}
+
+#ticket .date {
+ color: #666;
+ float: right;
+ font-size: 1em;
+ position: relative;
+ top: -.4em;
+}
+
+#ticket table.properties {
+ clear: both;
+ border-top: 1px solid #ddd;
+ border-collapse: collapse;
+ table-layout: fixed;
+ width: 100%;
+}
+
+#ticket table.properties td, #ticket table.properties th {
+ font-size: 1em;
+ padding: .5em 1em;
+ vertical-align: top;
+}
+
+#ticket .description h3 .lastmod {
+ font-size: 1em;
+}
+
+#ticket table.properties th {
+ color: #000;
+ width: 10%;
+}
+
+#ticket table.properties th.missing { 
+ color: #bbb; 
+}
+
+#ticket .description h3 {
+ border-bottom: 1px solid #ddd;
+ color: #666;
+ font-size: 1em;
+ font-weight: normal;
+}
+
+#ticket .description h3 .lastmod {
+ font-size: 1em;
+}
+
+/* Report.css overrides */
+#prefs .buttons {
+ margin-top: 1em;
+}
+
+h1 .numrows, h2 .numrows {
+ margin-left: 1em;
+ color: #666;
+ font-size: 70%;
+ font-weight: normal;
+}
+
+h2.report-result {
+ background: none;
+ border-bottom: 1px solid #CCC;
+ margin: 2em 0 0;
+ padding: .2em .4em;
+ box-shadow: none;
+ border-radius: 0;
+ font-size: 1.4em;
+}
+
+#filters th { 
+    font-size: 0.9em; 
+    text-align: right; 
+    white-space: nowrap; 
+}
+#filters td label { 
+    font-size: 0.9em;
+}
+
+#query fieldset, #query fieldset input, #query fieldset select {
+ font-size: 0.9em;
+}
+
+#query .option { 
+    float: left; 
+    line-height: 2em; 
+    margin: 0.8em 2.5em 0 .5em; 
+    padding: 0 0 .1em
+}
+
+#query .option, #query .option input, #query .option select { 
+    font-size: 0.9em;
+}
+
+/* roadmap.css overrides */
+.milestone .info h2 {
+ background: none;
+ border-bottom: 1px solid #d7d7d7;
+ margin: 0.5em 0;
+ box-shadow: none;
+ border-radius: 0;
+}
+
+.milestone .info h2 :link, .milestone .info h2 :visited {
+ color: #000;
+ display: block;
+ border-bottom: none;
+ padding: 0;
+}
+
+.milestone .info .date {
+ color: #888;
+ font-size: 0.9em;
+ float: right;
+ font-style: italic;
+ margin: 0 0 1em 0;
+}
+
+table.progress td.closed { 
+    background: #019875 !important; /* important because roadmap.css seems to take priority for wiki pages... ? */
+}
+
+.trac-groupprogress th, .trac-groupprogress td { 
+    font-size: 0.85em !important; /* important because roadmap.css takes priority on wiki pages... ? */ 
+}
+
+/* Information content */
+div.trac-content {
+ padding: .5em 1em;
+ margin: .3em auto;
+ border: none;
+ border-radius: 0;
+ box-shadow: none;
+}
+
+
+/* Ticket listing styles */
+table.listing thead tr { 
+    background: #eee;
+}
+
+.tickets tr.trac-columns th { 
+    background: #eee; 
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom-color: #ccc;
+}
+
+.tickets tr.trac-columns th a {
+    color: #333;
+}
+
+table.listing tbody tr:hover td { 
+    background: #ddd !important /* sadly, Trac itself has !important for this. I would prefer a darkening effect for each, which would be easier with SASS... */
+}
+
+/* Undefined priority */
+.tickets tr.color-odd  { background: #fbfbfb; border-color: #ddd; color: #333 }
+.tickets tr.color-even { background: #f6f6f6; border-color: #ccc; color: #333 }
+.tickets tr.color-odd a, .tickets .color-even a { color: #333 }
+
+/* Blocker Priority */
+.tickets tr.color1-odd  { background: #FD7C7C; border-color: #FD7C7C; color: #333 }
+.tickets tr.color1-even { background: #F46767; border-color: #F46767; color: #333 }
+.tickets tr.color1-odd a, .tickets .color1-even a { color: #333 }
+
+/* Critical Priority */
+.tickets tr.color2-odd  { background: #efbca9     ; border-color: #efbca9     ; color: #333 }
+.tickets tr.color2-even { background: #ebac94      ; border-color: #ebac94      ; color: #333 }
+.tickets tr.color2-odd a, .tickets .color2-even a { color: #333 }
+
+/* Major Priority */
+.tickets tr.color3-odd  { background: #f1ddaf ; border-color: #f1ddaf ; color: #333 }
+.tickets tr.color3-even { background: #eed59c  ; border-color: #eed59c  ; color: #333 }
+.tickets tr.color3-odd a, .tickets .color3-even a { color: #333 }
+
+/* Minor Priority */
+.tickets tr.color4-odd  { background: #dee0c4 ; border-color: #dee0c4 ; color: #333 }
+.tickets tr.color4-even { background: #d3d5af  ; border-color: #d3d5af  ; color: #333 }
+.tickets tr.color4-odd a, .tickets .color4-even a { color: #333 }
+
+/* Trivial Priority */
+.tickets tr.color5-odd  { background: #dfe7f3 ; border-color: #dfe7f3 ; color: #333 }
+.tickets tr.color5-even { background: #d3dfef  ; border-color: #d3dfef  ; color: #333 }
+.tickets tr.color5-odd a, .tickets .color5-even a { color: #333 }
+
+/* IDEFK */
+.tickets tr.color6-odd  { background: #f0f0f0; border-color: #ddd; color: #888 }
+.tickets tr.color6-even { background: #f7f7f7; border-color: #ddd; color: #888 }
+.tickets tr.color6-odd a, .tickets .color6-even a { color: #b66 }
+
+
+/* Paging buttons */
+
+#content .paging { 
+  margin: 1em;
+  padding: 0;
+  font-size: 1em; 
+  line-height: 1em;
+  text-align: center;
+}
+
+#content .paging .current {
+  padding: 0.25em 0.5em;
+  border: 1px solid #666;
+  background: #666; 
+  color: #fff;
+  border-radius: 4px;
+}
+
+#content .paging :link, #content .paging :visited {
+  padding: 0.25em 0.5em;
+  border: 1px solid #666;
+  background: transparent; 
+  color: #666;
+  border-radius: 4px;
+}
+
+#content .paging :link:hover, #content .paging :visited:hover {
+  background: transparent; 
+  color: #333;  
+  border-color: #333;
+}
+
+#content .paging .previous a,
+#content .paging .next a {
+  font-size: 1em;
+  line-height: 1em;
+  padding: 0.25em 0.5em; 
+  font-weight: normal; 
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+
+#content .paging .previous a:hover,
+#content .paging .next a:hover {
+  background: transparent; 
+  color: #333;  
+  border-color: #333;
+}

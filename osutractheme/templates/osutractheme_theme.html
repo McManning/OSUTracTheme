@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:py="http://genshi.edgewall.org/"
+    py:strip="">
+
+<head py:match="head" py:attrs="select('@*')">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="osu_navbar/css/osu_navbar-resp-white.css">
+
+    ${select('*')}
+</head>
+
+<body py:match="body" py:attrs="select('@*')">
+
+    <div role="navigation" id="osu_navbar" aria-labelledby="osu_navbar_heading">
+        
+        <h2 id="osu_navbar_heading" class="osu-semantic">Ohio State nav bar</h2>
+        <a href="#PageHeader" id="skip" class="osu-semantic">Skip to main content</a>
+        
+        <div class="container">
+            <div class="univ_info">
+                <p class="univ_name"><a href="http://osu.edu" title="The Ohio State University">The Ohio State University</a></p>
+            </div><!-- /univ_info -->
+            <div class="univ_links">
+                <div class="links">
+                    <ul>
+                        <li><a href="http://www.osu.edu/help.php" class="help">Help</a></li>
+                        <li><a href="http://buckeyelink.osu.edu/" class="buckeyelink" >BuckeyeLink</a></li>
+                        <li><a href="http://www.osu.edu/map/" class="map">Map</a></li>
+                        <li><a href="http://www.osu.edu/findpeople.php" class="findpeople">Find People</a></li>
+                        <li><a href="https://email.osu.edu/" class="webmail">Webmail</a></li> 
+                        <li><a href="http://www.osu.edu/search/" class="search">Search Ohio State</a></li>
+                    </ul>
+                </div><!-- /links -->
+            </div><!-- /univ_links -->
+        </div><!-- /container -->
+
+    </div><!-- /osu_navbar -->
+
+    <div id="PageHeader" class="noprint">
+    <ul>
+        <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
+        ${item.label}
+        </li>
+    </ul>
+    <a id="logo" href="${chrome.logo.link}">${chrome.logo.alt}</a>
+    </div>
+
+    <div id="MenuBar" class="noprint">
+    <div id="MenuBarHighlight">
+    <ul>
+        <li py:for="idx, item in enumerate(chrome.nav['mainnav'])" class="${classes(first_last(idx, chrome.nav['mainnav']), active=item.active)}">
+        ${item.label}
+        </li>
+    </ul>
+    </div>
+    </div>
+
+    <div id="Container">
+        <py:if test="len(chrome.ctxtnav) > 0">
+        <div id="SubMenuBar" class="noprint">
+            <ul>
+            <li py:for="i, elm in enumerate(chrome.ctxtnav)" class="${classes(first_last(i, chrome.ctxtnav), active=elm.active)}">$elm</li>
+            </ul>
+        </div>
+        </py:if>
+        ${select('*')}
+    </div>
+
+    <div id="Footer" class="noprint">
+    © 2012 Trac adaptation of Redmine theme A1 from Kirill Bezrukov <a href='http://redminecrm.com/projects/a1theme/wiki'>redminecrm.com</a><br/>
+    </div>
+
+</body>
+</html>
+      
