@@ -60,13 +60,15 @@
             </ul>
         </div>
         </py:if>
-        ${select('*')}
-
-        <ul id="MetaNav">
+        <ul id="MetaNav" class="noprint">
             <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
             ${item.label}
             </li>
         </ul>
+        <div class="clearfix" />
+
+        ${select('*')}
+
     </div>
 
     <div id="Footer" class="noprint">

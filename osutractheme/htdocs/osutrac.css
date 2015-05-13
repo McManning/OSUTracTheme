@@ -13,6 +13,17 @@
   font-style: normal;
 }
 
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 /* Documentation extras */
 
 .docbox {
@@ -330,7 +341,7 @@ h4, .wikipage h3 {
 #altlinks {
     border-radius: 0;
     border-top: none;
-    margin: 1em 0;
+    margin: 1em;
 }
 
 #content.roadmap > h1,#content.search > h1, #content.admin > h1, #content.prefs > h1,#content.error > h1 {
@@ -398,8 +409,9 @@ table.listing tbody td, table.listing tbody th {
 
 /********************* Sub menu bar ***************/
 #SubMenuBar {
-/*  float:left; */
-    margin-top:15px;
+float:left;
+    
+margin-top: 5px;
 }
 
 #SubMenuBar ul {
@@ -451,6 +463,19 @@ table.listing tbody td, table.listing tbody th {
     background-color:#E0E0E0;
 }
 
+#MetaNav {
+    float: right;
+}
+
+#MetaNav li {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+    white-space: nowrap;
+}
+
 /*************** BUTTON BAR ******************/
 #delete, #rename, #save{
     margin:0px;
@@ -481,7 +506,6 @@ table.listing tbody td, table.listing tbody th {
     background-color:#D0D0D0;
 }
 
-/*
 .buttons #modifypage div input[type="submit"] {
     background-image: url("edit.png");
     background-position: 5px 50%;
@@ -509,7 +533,6 @@ table.listing tbody td, table.listing tbody th {
     background-repeat: no-repeat;
     padding-left: 25px;
 }
-*/
 
 .buttons input:hover {
     color:#333333;
