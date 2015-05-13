@@ -26,7 +26,7 @@ setup(
     install_requires = [
         'Trac',
         'TracThemeEngine>=2.0'
-    ]
+    ],
 
     entry_points = {
         'trac.plugins': 'OSUTracTheme = %s' % (PACKAGE)
