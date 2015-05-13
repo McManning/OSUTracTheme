@@ -481,6 +481,7 @@ table.listing tbody td, table.listing tbody th {
     background-color:#D0D0D0;
 }
 
+/*
 .buttons #modifypage div input[type="submit"] {
     background-image: url("edit.png");
     background-position: 5px 50%;
@@ -508,6 +509,7 @@ table.listing tbody td, table.listing tbody th {
     background-repeat: no-repeat;
     padding-left: 25px;
 }
+*/
 
 .buttons input:hover {
     color:#333333;
