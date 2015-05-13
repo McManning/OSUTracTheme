@@ -409,9 +409,8 @@ table.listing tbody td, table.listing tbody th {
 
 /********************* Sub menu bar ***************/
 #SubMenuBar {
-float:left;
     
-margin-top: 5px;
+margin-top: 15px;
 }
 
 #SubMenuBar ul {
@@ -465,15 +464,17 @@ margin-top: 5px;
 
 #MetaNav {
     float: right;
+    margin-right: 0.5em;
 }
 
 #MetaNav li {
     display: inline;
     float: right;
     list-style-type: none;
-    margin: 0 0 0 1em;
+    margin: 0 1em 0 0;
     padding: 0;
     white-space: nowrap;
+    font-size: 0.9em;
 }
 
 /*************** BUTTON BAR ******************/
@@ -570,16 +571,11 @@ margin-top: 5px;
 
 /****************** FOOTER ****************/
 #Footer {
-    /*border-top: 1px solid #bbb;*/
-    color: #AAAAAA;
-    font-size: 8t;
-    /*padding: 12px;*/
-    margin:15px;
-    text-align:center;
-    /*margin-top: 32px;
-    margin-bottom: 0px;
-    background: url("footer-highlight.png") repeat-x;*/
-    /*background-color: #ddd;*/
+    float: left;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 15px 100px 20px 20px;
 }
 
 /**************** side bar *********************/
