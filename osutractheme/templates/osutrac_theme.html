@@ -60,20 +60,23 @@
             </ul>
         </div>
         </py:if>
-        <ul id="MetaNav" class="noprint">
-            <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
-            ${item.label}
-            </li>
-        </ul>
-        <div class="clearfix" />
 
         ${select('*')}
 
     </div>
 
     <div id="Footer" class="noprint">
-    &copy; 2015 The Ohio State University - <a href="https://research.osu.edu">Office of Research</a><br/>
+    &copy; ${datetime.now().year}, The Ohio State University - <a href="https://research.osu.edu">Office of Research</a><br/>
+    208 Bricker Hall | 190 North Oval Mall | Columbus, Ohio 43210 <br/>
+    Phone: (614) 292-1582 | <a href="http://research.osu.edu/contact/">Contact</a><br/> 
+    If you have trouble accessing this page and need to request an alternate format, contact <a href="mailto:or-webmaster@osu.edu">or-webmaster@osu.edu</a>.
     </div>
+
+    <ul id="MetaNav" class="noprint">
+        <li py:for="idx, item in enumerate(chrome.nav['metanav'])">
+        ${item.label}
+        </li>
+    </ul>
 
 </body>
 </html>
