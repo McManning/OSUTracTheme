@@ -433,8 +433,9 @@ margin-top: 15px;
 
 #SubMenuBar li a {
     color:#505050;
-    font-size: 0.9em;
-    line-height:1.4em;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 1em;
     white-space: nowrap;
 }
 
@@ -505,34 +506,6 @@ margin-top: 15px;
 
 .buttons input[type="button"]:hover, .buttons input[type="submit"]:hover {
     background-color:#D0D0D0;
-}
-
-.buttons #modifypage div input[type="submit"] {
-    background-image: url("edit.png");
-    background-position: 5px 50%;
-    background-repeat: no-repeat;
-    padding-left: 25px;
-}
-
-.buttons #attachfile div input[type="submit"]{
-    background-image: url("attachment.png");
-    background-position: 5px 50%;
-    background-repeat: no-repeat;
-    padding-left: 25px;
-}
-
-.buttons #rename div input[type="submit"]{
-    background-image: url("move.png");
-    background-position: 5px 50%;
-    background-repeat: no-repeat;
-    padding-left: 25px;
-}
-
-.buttons #delete input[type="submit"]{
-    background-image: url("delete.png");
-    background-position: 5px 50%;
-    background-repeat: no-repeat;
-    padding-left: 25px;
 }
 
 .buttons input:hover {
@@ -763,11 +736,6 @@ h2 {
     box-shadow: none;
 }
 
-#SubMenuBar li a {
-    font-size: 1em;
-    line-height: 1em;
-}
-
 /* Avoid to inherit white-space of its parent element for IE 11, #11376 */
 input[type=button], input[type=submit], input[type=reset],
 .buttons input[type=button], .buttons input[type=submit], .buttons input[type=reset],
@@ -790,14 +758,16 @@ input[type=button], input[type=submit], input[type=reset],
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #444444;
-  background-color: #fff;
   text-shadow: none;
 
   color: #ffffff;
   background-color: #005782;
   border-color: #005782;
   box-shadow: none;
+}
+
+#SubMenuBar li {
+  padding: 0;
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, #SubMenuBar li:hover {
