@@ -140,12 +140,14 @@ h2,h3 {
     text-align:justify;
 }
 
+/*
 a.ext-link .icon {
     background-image: url("external.png");
     background-position: 0 60%;
     background-repeat: no-repeat;
     padding-left: 12px;
 }
+*/
 
 h4, .wikipage h3 {
     border-bottom: 1px dotted #BBBBBB;
@@ -208,7 +210,7 @@ h4, .wikipage h3 {
     font-size: 0;
     height: 100px;
 
-    background: url('images/oris_trac_header.png') 15px 30px no-repeat;
+    background: url('images/oris_trac_header.png') 20px 30px no-repeat;
 }
 
 /********************** LINE WITH LOGO *******************/

@@ -1,0 +1,60 @@
+
+// base.sass
+
+
+$font-stack: 'proximanova', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+
+//@media print
+ //   .noprint
+  //      display: none
+
+
+body
+    background: none repeat scroll 0 0 #F0F0F0
+    font: 14px $font-stack
+    color: #484848
+    margin: 0
+    padding: 0
+    min-width: 800px
+    -webkit-font-smoothing: antialiased
+    -moz-font-smoothing: antialiased
+
+    h1, h2, h3, h4, h5, h6
+        font-family: $font-stack
+
+
+    h1, .wikipage h1
+        font-family: $font-stack
+        color: #222
+        font-size: 2em
+        margin-left: 0
+
+    h2, .wikipage h2
+        font-family: $font-stack
+        color: #222
+        font-size: 1.5em
+        background: none
+    
+a, a:visited, :link, :link:visited
+    background-color: none
+    text-decoration: none
+    border-bottom: none
+
+a, a:link, a:visited
+    color: #005782
+
+a:hover, *:visited:hover, :link:hover, *:link:hover
+    background-color: transparent
+    text-decoration: underline
+    color: #005782
+
+#content.admin
+    h1
+        display: block
+        float: none
+        margin-top: 6px
+
+
+
+

@@ -1,0 +1,41 @@
+body {
+  background: none repeat scroll 0 0 #F0F0F0;
+  font: 14px "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+  min-width: 800px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  body h1, body .wikipage h1 {
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    font-size: 2em;
+    margin-left: 0; }
+  body h2, body .wikipage h2 {
+    font-family: "proximanova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    font-size: 1.5em;
+    background: none; }
+
+a, a:visited, :link, :link:visited {
+  background-color: none;
+  text-decoration: none;
+  border-bottom: none; }
+
+a, a:link, a:visited {
+  color: #005782; }
+
+a:hover, *:visited:hover, :link:hover, *:link:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #005782; }
+
+#content.admin h1 {
+  display: block;
+  float: none;
+  margin-top: 6px; }
+
+/*# sourceMappingURL=base.css.map */
