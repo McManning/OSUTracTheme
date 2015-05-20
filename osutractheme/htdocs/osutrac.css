@@ -991,28 +991,28 @@ table.listing tbody tr:hover td {
 .tickets tr.color-odd a, .tickets .color-even a { color: #333 }
 
 /* Blocker Priority */
-.tickets tr.color1-odd, table.tickets tbody tr.prio1  { background: #FD7C7C; border-color: #FD7C7C; color: #333 }
-.tickets tr.color1-even, table.tickets tbody tr.even.prio1 { background: #F46767; border-color: #F46767; color: #333 }
-.tickets tr.color1-odd a, table.tickets tbody tr.prio1 a, .tickets .color1-even a, table.tickets tbody tr.even.prio1 a { color: #333 }
+.tickets tr.color1-odd, table.tickets tbody tr.prio1  { background: #fae6e6; border-color: #fae6e6; color: #C00 }
+.tickets tr.color1-even, table.tickets tbody tr.even.prio1 { background: #fae6e6; border-color: #fae6e6; color: #C00 }
+.tickets tr.color1-odd a, table.tickets tbody tr.prio1 a, .tickets .color1-even a, table.tickets tbody tr.even.prio1 a { color: #C00 }
 
 /* Critical Priority */
-.tickets tr.color2-odd, table.tickets tbody tr.prio2  { background: #efbca9     ; border-color: #efbca9     ; color: #333 }
-.tickets tr.color2-even, table.tickets tbody tr.even.prio2 { background: #ebac94      ; border-color: #ebac94      ; color: #333 }
+.tickets tr.color2-odd, table.tickets tbody tr.prio2  { background: #fae6e6     ; border-color: #fae6e6     ; color: #333 }
+.tickets tr.color2-even, table.tickets tbody tr.even.prio2 { background: #fae6e6      ; border-color: #fae6e6      ; color: #333 }
 .tickets tr.color2-odd a, table.tickets tbody tr.prio2 a, .tickets .color2-even a, table.tickets tbody tr.even.prio2 a { color: #333 }
 
 /* Major Priority */
-.tickets tr.color3-odd, table.tickets tbody tr.prio3  { background: #f1ddaf ; border-color: #f1ddaf ; color: #333 }
-.tickets tr.color3-even, table.tickets tbody tr.even.prio3 { background: #eed59c  ; border-color: #eed59c  ; color: #333 }
+.tickets tr.color3-odd, table.tickets tbody tr.prio3  { background: #fefacf ; border-color: #fefacf ; color: #333 }
+.tickets tr.color3-even, table.tickets tbody tr.even.prio3 { background: #fefacf  ; border-color: #fefacf  ; color: #333 }
 .tickets tr.color3-odd a, table.tickets tbody tr.prio3 a, .tickets .color3-even a, table.tickets tbody tr.even.prio3 a { color: #333 }
 
 /* Minor Priority */
-.tickets tr.color4-odd, table.tickets tbody tr.prio4  { background: #dee0c4 ; border-color: #dee0c4 ; color: #333 }
-.tickets tr.color4-even, table.tickets tbody tr.even.prio4 { background: #d3d5af  ; border-color: #d3d5af  ; color: #333 }
+.tickets tr.color4-odd, table.tickets tbody tr.prio4  { background: #eff ; border-color: #eff ; color: #333 }
+.tickets tr.color4-even, table.tickets tbody tr.even.prio4 { background: #eff  ; border-color: #eff  ; color: #333 }
 .tickets tr.color4-odd a, table.tickets tbody tr.prio4 a, .tickets .color4-even a, table.tickets tbody tr.even.prio4 a { color: #333 }
 
 /* Trivial Priority */
-.tickets tr.color5-odd, table.tickets tbody tr.prio5  { background: #dfe7f3 ; border-color: #dfe7f3 ; color: #333 }
-.tickets tr.color5-even, table.tickets tbody tr.even.prio5 { background: #d3dfef  ; border-color: #d3dfef  ; color: #333 }
+.tickets tr.color5-odd, table.tickets tbody tr.prio5  { background: #f0f4ff ; border-color: #f0f4ff ; color: #333 }
+.tickets tr.color5-even, table.tickets tbody tr.even.prio5 { background: #f0f4ff  ; border-color: #f0f4ff  ; color: #333 }
 .tickets tr.color5-odd a, table.tickets tbody tr.prio5 a, .tickets .color5-even a, table.tickets tbody tr.even.prio5 a { color: #333 }
 
 /* IDEFK */
